@@ -1,0 +1,24 @@
+
+
+$background-color: #101423;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: $background-color;
+  height: 100%;
+}
+
+:root {
+  --gradient-start: #FFEAC2;
+  --gradient-middle: #EED5A2;
+  --gradient-end: #745D29;
+}
+
+
+.navbar {
+  background-color: transparent;
+}

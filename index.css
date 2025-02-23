@@ -1,0 +1,37 @@
+:root {
+    --gradient-start: #FFEAC2;
+    --gradient-middle: #EED5A2;
+    --gradient-end: #745D29;
+    --text-color: #f1f1f1;
+    --gold-color: linear-gradient(90deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+  }
+  
+  #cevat-text {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+    background: var(--gold-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  #gradient-border {
+    border: 0.5px solid transparent;
+    border-image: linear-gradient(90deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+    border-image-slice: 1;
+  }
+  .card {
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(237, 235, 235, 0.946);
+    
+  }
+  .sideimag {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .sideimag {
+      display: none;
+    }
+  }

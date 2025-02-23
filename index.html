@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Portfolio Bulma</title>
+</head>
+<body class="has-background-dark has-text-light m-0 p-0">
+    <nav class="navbar has-background-dark" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#" id="cevat-text">
+              Shahad
+            </a>
+            <a role="button" class="navbar-burger" id="burger" aria-expanded="false">
+              <img src="images/menu-kopi.svg" alt="Menu">
+            </a>
+          </div>
+      
+          <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+              <a class="navbar-item has-text-light" href="#hero-image">Hjem</a>
+              <a class="navbar-item has-text-light" href="#om-mig">Om mig</a>
+              <a class="navbar-item has-text-light" href="#projekter">Projekter</a>
+              <a class="navbar-item has-text-light" href="../images/CV Shahad.pdf" target="_blank">CV</a>
+              <a class="navbar-item has-text-light" href="#contact">Kontakt</a>
+            </div>
+          </div>
+        </div>
+        
+    </nav>
+    <div class="has-background-warning" id="gradient-border"></div>
+
+    <section id="hero-image" class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns is-vcentered">
+              <!-- Venstre kolonne med tekst og billede -->
+              <div class="column is-half">
+                <div class="columns is-vcentered">
+                  <div class="column is-narrow">
+                    <img class="sideimag" src="../images/hero,sideimag.png" alt="">
+                  </div>
+                  <div class="column">
+                    <div class="text-container">
+                      <h2 id="cevat-text">Velkommen til min verden</h2>
+                      <h1 class="title is-1 has-text-light">Mit navn er Shahad,</h1>
+                      <h1 class="title is-1 has-text-light">og jeg er <span>Webudvikler</span></h1>
+                      <div class="icons">
+                        <a href="https://github.com/Shahad1991" class="me-3">
+                          <i class="fab fa-github" style="font-size: 2rem; color: #EED5A2;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shahadnazaromhassoni/" class="me-3">
+                          <i class="fab fa-instagram" style="font-size: 2rem; color: #EED5A2;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shahad-al-jawashee-41502a24b/">
+                          <i class="fab fa-linkedin" style="font-size: 2rem; color: #EED5A2;"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Højre kolonne med billede -->
+            <div class="column is-half">
+                <div class="hero-img-container" style="background-image: url('../images/background-hero.svg'); background-position: right; background-repeat: no-repeat; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+                   <img class="hero-img image is-fluid is-rounded" src="../images/myimag.png" alt="Hero image">
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <section id="projekter" class="section">
+        <div class="container">
+            <div class="has-text-centered mb-5">
+                <h1 class="title has-text-white">Mine projekter</h1>
+                <h4 class="subtitle font-caveat" id="cevat-text">et indblik i mine kreative projekter</h4>
+            </div>
+            <div class="has-text-centered mb-4">
+                <button class="button is-outlined is-primary filter-btn is-active" onclick="filterSelection('all')">Alle</button>
+                <button class="button is-outlined is-primary filter-btn" onclick="filterSelection('school')">Skole Projekter</button>
+                <button class="button is-outlined is-primary filter-btn" onclick="filterSelection('personal')">Personlige Projekter</button>
+            </div>
+            <div id="project-list" class="columns is-multiline is-centered">
+                <div class="column is-one-third project-container school ">    
+                    <div class="card  has-background-dark has-text-light" >
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/e-commerce.png" alt="E-Commerce">
+                            </figure>
+                        </div>
+                        <div class="card-content ">
+                            <h5 class="title is-5" id="cevat-text">E-Commerce</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+
+                            <p class="content">Vi arbejdede med Lean Startup-processen for at designe en unik T-shirt og lancere en webshop, hvor vi sælger produktet. Ideen var at skabe et unikt design og markedsføre det via sociale medier. Vi opbyggede en online kanal på Instagram, <a href="https://www.instagram.com/noodledoodlezoo/">Noodle Doodle Zoo</a>, hvor vi fokuserede på at markedsføre produktet og vise vores kollektion.<br>Min rolle i projektet omfattede:</p>
+                            <ul>
+                                <li>Idegenerering/Ideudvikling</li>
+                                <li>Gennemførelse af interviews og tests</li>
+                                <li>Arbejde med storytelling</li>
+                            </ul>
+                            
+                        </div>
+                        
+    
+                </div>
+                    
+                </div>
+                <div class="column is-one-third project-container school">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/app.png" alt="Iværksætteridé">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">Iværksætteridé</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">Til mit afsluttende projekt i multimediedesign udviklede jeg en iværksætteridé, hvor jeg gennem grundig research fandt potentialet for en app til håndværkere. Jeg stod for hele processen, fra idéudvikling og design til kodning og markedsføring af B2B-produktet, og integrerede både Lean Startup- og Design Thinking-modellerne i arbejdet.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="column is-one-third project-container school">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/kogehandel.png" alt="UX">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">UX</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">Vi samarbejdede med Køge Handel om at øge kundetrafikken. Gennem UX-research identificerede vi problemer som uklare parkeringsregler og navigationsvanskeligheder. Løsningen blev en QR-kode, der hjælper besøgende med at finde regler og butikker.<br>Min rolle i projektet omfattede:</p>
+                            <ul>
+                                <li>Gennemførelse af interviews og desk research</li>
+                                <li>Udvikling af personas og brugerrejser</li>
+                                <li>Idegenerering/ Test af løsningen</li>
+                                <li>Kodning af en del af prototypen</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                   
+                    
+                </div>
+                <div class="column is-one-third project-container school">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/2sem.png" alt="Opbygning af Hjemmeside">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">Opbygning af Hjemmeside</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">Her har vi samarbejdet med, <a href="http://www.hmi-tomrermester.dk/"> hmi-tomremester </a> Sammen udviklede vi en imponerende hjemmeside og en målrettet social medie strategi til en start-up tømrervirksomhed. Endvidere kunne vi stolt præsentere en velformuleret hjemmeside til vores kunde.<br> Min rolle i projektet omfattede:</p>
+                            <ul>
+                                <li>Undersøgelse af målgruppen/interviews</li>
+                                <li>Udvikling af markedsføringsstrategi</li>
+                                <li>Finde farver og skrifttype/ Design af prototyper</li>
+                                <li>Kodning af dele af projektet</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="column is-one-third project-container school">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/golf.png" alt="Optimering af Hjemmeside">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">Optimering af Hjemmeside</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">Vi har samarbejdet med en kunde, som driver hjemmesiden <a href="https://www.golfacross.com/"> GolfAcross</a>, hvor målgruppen er golfspillere. Vores opgave var at optimere hjemmesiden ved at gennemføre omfattende tests af både appen og hjemmesiden. Målet var at identificere problemer og derefter arbejde målrettet på at løse dem.<br> Min rolle i projektet omfattede:</p>
+                            <ul>
+                                <li>Gennemførelse af interviews og tests</li>
+                                <li>Udarbejdelse af personaer og brugerrejser</li>
+                                <li>Kodning af dele af prototypen</li>
+                                <li>Idegenerering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third project-container school">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/bookingsystem.png" alt="Opbygning af Bookingsystem">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">Opbygning af Bookingsystem</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">På tredje semester af multimediedesign har jeg samarbejdet med en kollega om at designe og udvikle et nyt bookingsystem til en psykiatrisk hjemmeside. Projektet involverede tæt samarbejde med kunden og omfattede hele processen fra UX-research og design til kodning af prototypen, hvor fokus var at forbinde systemet til en database ved hjælp af Firebase.<br> Min rolle i projektet omfattede:</p>
+                            <ul>
+                                <li>logodesign</li>
+                                <li>Udarbejdelse af personaer og brugerrejser</li>
+                                <li>Kodning af dele af prototypen</li>
+                                <li>Idegenerering og forbindelse med database</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third project-container personal">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/logodesign.png" alt="Logo Design">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">Logo Design</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">Jeg har designet et logo til en tømrerfirma, der er både enkelt og nemt at huske. Logoet blev brugt på arbejdstøj, arbejdsbil og visitkort.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third project-container personal">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/bilreklame.png" alt="Design af Bilreklame">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">Design af Bilreklame</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">Som en del af mit designlærlingarbejde har jeg designet en bilreklame for en kunde. Fokus var på at vælge farver og skrifttyper, som allerede er brugt på kundens hjemmeside, for at sikre en sammenhængende visuel identitet. Reklamen præsenterer informationen klart og tydeligt, og sigter mod at øge synligheden og tiltrække flere kunder.</p>
+                            <img src="../images/hmi-bil.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third project-container personal">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/some.png" alt="Content Creation">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">Content Creation</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">I min fritid arbejder jeg med content creation for<a href="https://www.instagram.com/hmitomrermester/"> HMI Tømrermester</a> på deres erhvervs-Instagram-konto. <br>Mine opgaver omfatter:</p>
+                            <ul>
+                                <li>Design af Instagram highlights</li>
+                                <li>Desk research og idegenerering</li>
+                                <li>Fotografering af projekter</li>
+                                <li>Videoproduktion og -redigering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third project-container personal">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/visitkort.png" alt="Design af Visitkort">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">Design af Visitkort</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">Jeg har designet et visitkort, der hjælper kunden med at nå ud til sin målgruppe. Fokus var på at skabe et professionelt og mindeværdigt design, der effektivt kommunikerer kundens budskab og brandidentitet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third project-container personal">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/bilrekale2.png" alt="Bilreklame">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">Bilreklame</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">Jeg samarbejdede med Bygg og renovere om at designe en bilreklame, der afspejler deres visuel identitet med designet på deres hjemmeside.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third project-container personal">
+                    <div class="card has-background-dark has-text-light">
+                        <div class="card-image">
+                            <figure class="image is-2by4">
+                                <img src="../images/logodesign2.png" alt="Logo Design">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5" id="cevat-text">Logo Design</h5>
+                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="content">Jeg har designet et logo til et tømrerfirma med fokus på enkelhed og genkendelighed. Logoet er skabt til at være professionelt og anvendeligt på arbejdstøj, køretøjer og markedsføringsmaterialer, alt sammen for at tydeligt afspejle virksomhedens brand.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="stiky-background is-fullwidth" src="../images/background.png" alt="Background image">
+    <section class="section has-background-dark">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <!-- Billede -->
+                <div class="column is-half has-text-centered">
+                    <figure class="image is-3by4 ">
+                        <img class="is-rounded" src="../images/my.jpeg" alt="personal image">
+                    </figure>
+                </div>
+    
+                <!-- Tekst -->
+                <div class="column is-half">
+                    <h1 class="title has-text-white">Om mig</h1>
+                    <h4 class="subtitle" id="cevat-text">
+                        En kort rejse gennem min baggrund, passioner og visioner
+                    </h4>
+                    <p class="has-text-light">
+                        Jeg er en ambitiøs og kreativ
+                        multimediedesigner med en passion
+                        for digital udvikling. Min
+                        interesse for
+                        teknologi og design har drevet mig til at vælge digital udvikling som en valgfag under mit Uddannelse
+                        som
+                        multimediedesigner. Jeg er en teamplayer og nyder at arbejde med andre kreative fagfolk i mit
+                        projektarbejde. Jeg værdsætter feedback og er altid åben for at lære og udvikle mig. <br>
+                        Jeg er god til at effektivt planlægge min tid. Min tendens til at skabe struktur hjælper mig med at
+                        organisere mine omgivelser og opgaver på en velordnet måde.
+                        Jeg er overbevist om, at opmærksomhed for detaljer er afgørende for at levere arbejde af høj kvalitet.
+                        <br>
+                        Yderligere har jeg en hobby inden for fotografering. Jeg nyder at fange
+                        øjeblikke og skabe visuelle historier med mine fotografier.
+                        Denne hobby har lært mig at observere verden på en anden måde og se skønheden i de små
+                        detaljer. Ikke mindst giver mig mulighed for at skabe visuelt tiltalende og meningsfulde
+                        oplevelser for brugerne.
+                    </p>
+                    <a href="./images/CV  Shahad.pdf" target="_blank" class="button is-primary mt-3">Min CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="stiky-background is-fullwidth" src="../images/background.png" alt="Background image">
+    <section class="section">
+       
+        <div class="container">
+            <h1 class="title has-text-centered has-text-white">Det siger andre om mig</h1>
+            <h4 class="subtitle has-text-centered"  id="cevat-text">Ærlige ord fra dem, jeg har samarbejdet med</h4>
+    
+            <div class="carousel has-text-centered">
+                <div class="carousel-item has-background-primary p-5">
+                    <q class="is-italic has-text-white">Shahad har været et aktiv gruppemedlem med gode kommunikationsevner...</q>
+                    <p class="author has-text-light">- Fatime / Studiekammerat</p>
+                </div>
+    
+                <div class="carousel-item has-background-primary p-5">
+                    <q class="is-italic has-text-white">Jeg har arbejdet med Shahad på flere projekter...</q>
+                    <p class="author has-text-light">- Areen / Studiekammerat</p>
+                </div>
+    
+                <div class="carousel-item has-background-primary p-5">
+                    <q class="is-italic has-text-white">Shahad har imponerende designfærdigheder...</q>
+                    <p class="author has-text-light">- HMI Tømrermester / Kunde</p>
+                </div>
+            </div>
+    
+            <div class="buttons is-centered mt-4">
+                <button class="button is-light prev">❮</button>
+                <button class="button is-light next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="columns is-vcentered is-centered"> <!-- Centrerer kolonnerne -->
+                <div class="column is-half">
+                    <div class="card" id="card" >
+                        <div class="card-content">
+                            <h1 class="title has-text-centered" id="cevat-text">Glæder mig til at høre fra dig!</h1>
+    
+                            <!-- Kontaktformular -->
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="6f66cf3b-a9a5-4d5e-87b9-0e7146b8a8b3">
+    
+                                <div class="field">
+                                    <label class="label">Navn</label>
+                                    <div class="control">
+                                        <input type="text" name="name" class="input" placeholder="Navn" required>
+                                    </div>
+                                </div>
+    
+                                <div class="field">
+                                    <label class="label">E-mail</label>
+                                    <div class="control">
+                                        <input type="email" name="email" class="input" placeholder="E-mail" required>
+                                    </div>
+                                </div>
+    
+                                <div class="field">
+                                    <label class="label">Besked</label>
+                                    <div class="control">
+                                        <textarea name="message" class="textarea" rows="5" placeholder="Skriv en besked" required></textarea>
+                                    </div>
+                                </div>
+    
+                                <div class="field">
+                                    <div class="control">
+                                        <button type="submit" class="button is-primary is-fullwidth">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="has-background-warning" id="gradient-border"></div>
+    <footer class="footer has-background-dark py-4 mt-5">
+    
+        <div class="container has-text-centered">
+            <!-- Footer Icons -->
+            <div class="footer-icons mb-4">
+                <a href="https://github.com/Shahad1991" class="me-3">
+                    <i class="fab fa-github" style="font-size: 2rem; color: #EED5A2;"></i>
+                  </a>
+                  <a href="https://www.instagram.com/shahadnazaromhassoni/" class="me-3">
+                    <i class="fab fa-instagram" style="font-size: 2rem; color: #EED5A2;"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/shahad-al-jawashee-41502a24b/">
+                    <i class="fab fa-linkedin" style="font-size: 2rem; color: #EED5A2;"></i>
+                  </a>
+            </div>
+    
+            <!-- Footer Links -->
+            <ul class="menu list-inline mb-4">
+                <li class="menu-item is-inline-block">
+                    <a href="#hero-image" class="has-text-light has-text-decoration-none">Hjem</a>
+                </li>
+                <li class="menu-item is-inline-block">
+                    <a href="#om-mig" class="has-text-light has-text-decoration-none">Om</a>
+                </li>
+                <li class="menu-item is-inline-block">
+                    <a href="#projekter" class="has-text-light has-text-decoration-none">Projekter</a>
+                </li>
+                <li class="menu-item is-inline-block">
+                    <a href="#contact" class="has-text-light has-text-decoration-none">Kontakt</a>
+                </li>
+            </ul>
+    
+            <!-- Copyright Text -->
+            <p class="mb-0 gradient-text">&copy; 2025 Shahad. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="index.js">
+      
+    </script>
+</body>
+</html>
