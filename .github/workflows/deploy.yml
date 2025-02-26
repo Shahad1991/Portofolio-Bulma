@@ -1,0 +1,33 @@
+name: Deploy Portofolio-Bulma
+
+on:
+  push:
+    branches:
+      - main  # Use main branch instead of gh-pages
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          repository: Shahad1991/Portofolio-Bulma
+
+      - name: Install Dependencies
+        run: npm install || echo "No dependencies to install"
+
+     # - name: Compile SCSS to CSS (if applicable)
+      #  run: npm run build-css || echo "No SCSS compilation needed"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+            path: Bulma/
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
