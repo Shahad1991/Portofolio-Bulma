@@ -1,37 +1,75 @@
 :root {
-    --gradient-start: #FFEAC2;
-    --gradient-middle: #EED5A2;
-    --gradient-end: #745D29;
-    --text-color: #f1f1f1;
-    --gold-color: linear-gradient(90deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
-  }
+  --primary-color: #101423;
+  --secondary-color: #F0D2C7;
+  --cards-color: #3B425F;
+  --gradient-start: #FFEAC2;
+  --gradient-middle: #EED5A2;
+  --gradient-end: #745D29;
+  --text-color: #f1f1f1;
+  --gold-color: linear-gradient(90deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+}
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: 'Jost', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--text-color);
   
-  #cevat-text {
-    font-family: 'Caveat', cursive;
-    font-size: 1.5rem;
-    background: var(--gold-color);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  #gradient-border {
-    border: 0.5px solid transparent;
-    border-image: linear-gradient(90deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
-    border-image-slice: 1;
-  }
-  .card {
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(237, 235, 235, 0.946);
-    
-  }
+}
+#jost-text {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+#cevat-text {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  background: var(--gold-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.navbar-menu {
+  background-color: var(--primary-color);
+}
+#gradient-border {
+  border: 0.5px solid transparent;
+  border-image: linear-gradient(90deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+  border-image-slice: 1;
+}
+
+.card {
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(237, 235, 235, 0.946);
+  background-color: var(--cards-color);
+  color: var(--text-color);
+}
+
+.sideimag {
+  display: block;
+}
+
+@media (max-width: 768px) {
   .sideimag {
-    display: block;
+    display: none;
   }
-  
-  @media (max-width: 768px) {
-    .sideimag {
-      display: none;
-    }
-  }
+}
+.btn {
+  background-color: var(--cards-color);
+  color: var(--text-color);
+  border: 1px solid transparent; /* Ændret til transparent for at bruge border-image */
+  border-image: var(--gold-color); /* Tilføj denne linje for at bruge gradienten */
+  border-image-slice: 1; /* Tilføj denne linje for at sikre, at hele gradienten bruges */
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: var(--gradient-middle); /* Ændre baggrundsfarven ved aktiv tilstand */
+  border: 1px solid var(--gradient-end); /* Ændre kantfarven ved aktiv tilstand */
+}

@@ -34,3 +34,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     showSlide(currentIndex);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projects = document.querySelectorAll('.project-container');
+  
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+        filterSelection(filter);
+  
+        // Fjern 'is-active' klassen fra alle knapper
+        filterButtons.forEach(btn => btn.classList.remove('is-active'));
+        // Tilføj 'is-active' klassen til den valgte knap
+        button.classList.add('is-active');
+      });
+    });
+  
+    function filterSelection(filter) {
+      projects.forEach(project => {
+        if (filter === 'all' || project.classList.contains(filter)) {
+          project.style.display = 'block';
+        } else {
+          project.style.display = 'none';
+        }
+      });
+    }
+  
+    // Initial visning af alle projekter
+    filterSelection('all');
+  });
