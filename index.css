@@ -22,12 +22,13 @@ body {
 }
 #jost-text {
   font-family: 'Jost', sans-serif;
-  font-size: 1.5rem;
+  font-weight: 300px;
   color: var(--text-color);
 }
 
 #cevat-text {
   font-family: 'Caveat', cursive;
+  font-weight: lighter;
   font-size: 1.5rem;
   background: var(--gold-color);
   background-clip: text;
@@ -50,7 +51,11 @@ body {
   background-color: var(--cards-color);
   color: var(--text-color);
 }
+.hero-img {
+  border-radius: 150px 150px 0 0;
 
+  
+}
 .sideimag {
   display: block;
 }

@@ -23,7 +23,7 @@
       
           <div class="navbar-menu" id="nav-links">
             <div class="navbar-end">
-              <a class="navbar-item has-text-light" href="#hero-image">Hjem</a>
+              <a class="navbar-item has-text-light" id="jost-text" href="#hero-image">Hjem</a>
               <a class="navbar-item has-text-light" href="#om-mig">Om mig</a>
               <a class="navbar-item has-text-light" href="#projekter">Projekter</a>
               <a class="navbar-item has-text-light" href="./images/CV Shahad.pdf" target="_blank">CV</a>
@@ -48,8 +48,8 @@
                   <div class="column">
                     <div class="text-container">
                       <h2 id="cevat-text">Velkommen til min verden</h2>
-                      <h1 class="title is-1 has-text-light">Mit navn er Shahad,</h1>
-                      <h1 class="title is-1 has-text-light">og jeg er <span>Webudvikler</span></h1>
+                      <h1 class="title is-1 has-text-light" id="jost-text ">Mit navn er Shahad,</h1>
+                      <h1 class="title is-1 has-text-light jost-text " id="jost-text ">og jeg er Webudvikler</h1>
                       <div class="icons">
                         <a href="https://github.com/Shahad1991" class="me-3">
                           <i class="fab fa-github" style="font-size: 2rem; color: #EED5A2;"></i>
@@ -67,9 +67,10 @@
               </div>
             <!-- Højre kolonne med billede -->
             <div class="column is-half">
-                <div class="hero-img-container" style="background-image: url('../images/background-hero.svg'); background-position: right; background-repeat: no-repeat; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
-                   <img class="hero-img image is-fluid is-rounded" src="./images/myimag.png" alt="Hero image">
+                <div class="hero-img-container" style="background-image: url('./images/background-hero.svg');">
+                    <img class="hero-img image is-fluid is-rounded" src="./images/myimag.png" alt="Hero image">
                 </div>
+                
             </div>
           
         </div>
