@@ -94,4 +94,12 @@ span {
   color: #22273B;
 }
 
-
+.small-text {
+  font-size: 1rem; /* Adjust the size as needed */
+  background: var(--gold-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Caveat', cursive;
+  font-weight: lighter;
+}
