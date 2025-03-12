@@ -49,18 +49,19 @@
                     <div class="text-container">
                       <h2 id="cevat-text">Velkommen til min verden</h2>
                       <h1 class="title is-1 has-text-light" id="jost-text ">Mit navn er Shahad,</h1>
-                      <h1 class="title is-1 has-text-light jost-text " id="jost-text ">og jeg er Webudvikler</h1>
+                      <h1 class="title is-1 has-text-light jost-text " id="jost-text ">og jeg er <span>Webudvikler</span></h1>
+                      <h2 id="changingH2">Beskrives ofte som <br></h2>
                       <div class="icons">
-                        <a href="https://github.com/Shahad1991" class="me-3">
-                          <i class="fab fa-github" style="font-size: 2rem; color: #EED5A2;"></i>
+                        <a href="https://github.com/Shahad1991">
+                            <img src="./images/git.svg" alt="Github" class="w-10 h-10 px-2 transition-transform transform hover:scale-110">
                         </a>
-                        <a href="https://www.instagram.com/shahadnazaromhassoni/" class="me-3">
-                          <i class="fab fa-instagram" style="font-size: 2rem; color: #EED5A2;"></i>
+                        <a href="https://www.instagram.com/shahadnazaromhassoni/">
+                            <img src="./images/insta.svg" alt="Instagram" class="w-8 h-8 px-2 transition-transform transform hover:scale-110">
                         </a>
                         <a href="https://www.linkedin.com/in/shahad-al-jawashee-41502a24b/">
-                          <i class="fab fa-linkedin" style="font-size: 2rem; color: #EED5A2;"></i>
+                            <img src="./images/ln.svg" alt="LinkedIn" class="w-8 h-8 px-2 transition-transform transform hover:scale-110">
                         </a>
-                      </div>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -83,9 +84,9 @@
                 <h4 class="subtitle font-caveat" id="cevat-text">et indblik i mine kreative projekter</h4>
             </div>
             <div class="has-text-centered mb-4">
-                <button class="button is-outlined  filter-btn is-active btn" onclick="filterSelection('all')">Alle</button>
-                <button class="button is-outlined  filter-btn is-active btn" onclick="filterSelection('school')">Skole Projekter</button>
-                <button class="button is-outlined  filter-btn is-active btn" onclick="filterSelection('personal')">Personlige Projekter</button>
+                <button class="button is-outlined mx-2 mb-2 btn" onclick="filterSelection('all')">Alle</button>
+                <button class="button is-outlined  filter-btn  btn" onclick="filterSelection('school')">Skole Projekter</button>
+                <button class="button is-outlined  filter-btn  btn" onclick="filterSelection('personal')">Personlige Projekter</button>
             </div>
             <div id="project-list" class="columns is-multiline is-centered">
                 <div class="column is-one-third project-container school ">    
@@ -219,7 +220,7 @@
                                 <img src="./images/logodesign.png" alt="Logo Design">
                             </figure>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content intro">
                             <h5 class="title is-5" id="cevat-text">Logo Design</h5>
                             <p class="subtitle is-6">@johnsmith</p>
                             <p class="content">Jeg har designet et logo til en tømrerfirma, der er både enkelt og nemt at huske. Logoet blev brugt på arbejdstøj, arbejdsbil og visitkort.</p>
@@ -319,7 +320,7 @@
     
                 <!-- Tekst -->
                 <div class="column is-half">
-                    <h1>Om mig</h1>
+                    <h1 class="title has-text-white">Om mig</h1>
                     <h4 class="subtitle" id="cevat-text">
                         En kort rejse gennem min baggrund, passioner og visioner
                     </h4>
@@ -351,7 +352,7 @@
     <section class="section">
        
         <div class="container ">
-            <h1 class="title has-text-centered">Det siger andre om mig</h1>
+            <h1 class="title has-text-centered has-text-white">Det siger andre om mig</h1>
             <h4 class="subtitle has-text-centered"  id="cevat-text">Ærlige ord fra dem, jeg har samarbejdet med</h4>
     
             <div class="carousel has-text-centered  " id="gradient-border">
@@ -391,21 +392,21 @@
                                 <input type="hidden" name="access_key" value="6f66cf3b-a9a5-4d5e-87b9-0e7146b8a8b3">
     
                                 <div class="field">
-                                    <label class="label">Navn</label>
+                                    <label class="label has-text-white">Navn</label>
                                     <div class="control">
                                         <input type="text" name="name" class="input" placeholder="Navn" required>
                                     </div>
                                 </div>
     
                                 <div class="field">
-                                    <label class="label">E-mail</label>
+                                    <label class="label has-text-light">E-mail</label>
                                     <div class="control">
                                         <input type="email" name="email" class="input" placeholder="E-mail" required>
                                     </div>
                                 </div>
     
                                 <div class="field">
-                                    <label class="label">Besked</label>
+                                    <label class="label has-text-light">Besked</label>
                                     <div class="control">
                                         <textarea name="message" class="textarea" rows="5" placeholder="Skriv en besked" required></textarea>
                                     </div>

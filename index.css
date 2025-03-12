@@ -25,7 +25,12 @@ body {
   font-weight: 300px;
   color: var(--text-color);
 }
-
+span {
+  background: var(--gold-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 #cevat-text {
   font-family: 'Caveat', cursive;
   font-weight: lighter;
@@ -65,16 +70,28 @@ body {
     display: none;
   }
 }
+
 .btn {
   background-color: var(--cards-color);
-  color: var(--text-color);
+  color: var(--gold-color);
   border: 1px solid transparent; /* Ændret til transparent for at bruge border-image */
   border-image: var(--gold-color); /* Tilføj denne linje for at bruge gradienten */
   border-image-slice: 1; /* Tilføj denne linje for at sikre, at hele gradienten bruges */
   cursor: pointer;
 }
-
-.btn:active {
-  background-color: var(--gradient-middle); /* Ændre baggrundsfarven ved aktiv tilstand */
-  border: 1px solid var(--gradient-end); /* Ændre kantfarven ved aktiv tilstand */
+.btn:hover,
+.btn:active  {
+  background-image: var(--gold-color); /* Guld baggrund ved hover */
+  color: var(--primary-color); /* Mørk farve tekst ved hover */
 }
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .intro {
+  height: 450px;
+  background: #F0D2C7;
+  color: #22273B;
+}
+
+
