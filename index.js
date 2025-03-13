@@ -26,6 +26,12 @@ function eraseText() {
 
 typeWriter(); // Start the typing animation
 
+document.getElementById("toggle-text").addEventListener("click", function(event) {
+  event.preventDefault();
+  const extraContent = document.getElementById("extra-content");
+  extraContent.style.display = (extraContent.style.display === "none" || extraContent.style.display === "") ? "block" : "none";
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.getElementById('burger');
     const nav = document.getElementById('nav-links');

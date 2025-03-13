@@ -49,13 +49,7 @@ span {
   border-image-slice: 1;
 }
 
-.card {
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(237, 235, 235, 0.946);
-  background-color: var(--cards-color);
-  color: var(--text-color);
-}
+
 .hero-img {
   border-radius: 150px 150px 0 0;
 
@@ -70,7 +64,12 @@ span {
     display: none;
   }
 }
+.has-bullets {
+  list-style-type: disc;
+  padding-left: 20px;
+  
 
+}
 .btn {
   background-color: var(--cards-color);
   color: var(--gold-color);
@@ -84,16 +83,20 @@ span {
   background-image: var(--gold-color); /* Guld baggrund ved hover */
   color: var(--primary-color); /* Mørk farve tekst ved hover */
 }
-.card:hover {
-  cursor: pointer;
-}
 
-.card:hover .intro {
-  height: 450px;
-  background: #F0D2C7;
-  color: #22273B;
-}
 
+.extra-content {
+  display: none;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.card{
+  background-color: var(--cards-color);
+  color: var(--text-color);
+  box-shadow: 5px 5px 20px #f1f1f1;
+ 
+  
+}
 .small-text {
   font-size: 1rem; /* Adjust the size as needed */
   background: var(--gold-color);
