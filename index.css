@@ -7,6 +7,7 @@
   --gradient-end: #745D29;
   --text-color: #f1f1f1;
   --gold-color: linear-gradient(90deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+  --gold-shadow-color: rgba(238, 213, 162, 0.5); /* Adjust the alpha value for transparency */
 }
 body {
   background-color: var(--primary-color);
@@ -15,6 +16,10 @@ body {
   margin: 0;
   padding: 0;
 }
+h1{
+  font-family: 'Jost', sans-serif;
+  font-weight: 100px;
+}
 .navbar {
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -22,8 +27,8 @@ body {
 }
 #jost-text {
   font-family: 'Jost', sans-serif;
-  font-weight: 300px;
-  color: var(--text-color);
+  font-weight: 100px;
+  
 }
 span {
   background: var(--gold-color);
@@ -33,12 +38,16 @@ span {
 }
 #cevat-text {
   font-family: 'Caveat', cursive;
-  font-weight: lighter;
+  font-weight: 100;
   font-size: 1.5rem;
   background: var(--gold-color);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+.competenc{
+  
+  color: var(--text-color);
 }
 .navbar-menu {
   background-color: var(--primary-color);
@@ -64,39 +73,47 @@ span {
     display: none;
   }
 }
+
 .has-bullets {
   list-style-type: disc;
   padding-left: 20px;
   
 
 }
-.btn {
+.btn, .custom-button  {
   background-color: var(--cards-color);
   color: var(--gold-color);
   border: 1px solid transparent; /* Ændret til transparent for at bruge border-image */
   border-image: var(--gold-color); /* Tilføj denne linje for at bruge gradienten */
   border-image-slice: 1; /* Tilføj denne linje for at sikre, at hele gradienten bruges */
   cursor: pointer;
+  padding: 12px 25px; 
+  
 }
-.btn:hover,
+.btn:hover, .custom-button:hover,
 .btn:active  {
   background-image: var(--gold-color); /* Guld baggrund ved hover */
   color: var(--primary-color); /* Mørk farve tekst ved hover */
 }
 
-
-.extra-content {
-  display: none;
-  margin-top: 15px;
-  transition: all 0.3s ease-in-out;
+.shadow {
+  box-shadow: 0 4px 12px var(--gold-shadow-color);
 }
-.card{
+
+.card {
   background-color: var(--cards-color);
   color: var(--text-color);
-  box-shadow: 5px 5px 20px #f1f1f1;
- 
-  
+
+  border: 1px solid transparent; /* Ændret til transparent for at bruge border-image */
 }
+
+.icon, a {
+  background: var(--gold-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .small-text {
   font-size: 1rem; /* Adjust the size as needed */
   background: var(--gold-color);
@@ -106,3 +123,5 @@ span {
   font-family: 'Caveat', cursive;
   font-weight: lighter;
 }
+
+

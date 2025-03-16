@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Cards with Popups</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<section id="projekter" class="section">
+    <div class="container">
+        <div class="has-text-centered mb-5">
+            <h1 class="title has-text-white">Mine projekter</h1>
+            <h4 class="subtitle font-caveat" id="cevat-text">et indblik i mine kreative projekter</h4>
+        </div>
+        <button class="mr-auto mb-4 btn button is-outlined" onclick="goBack()">
+            <span class="icon">
+                <i class="fas fa-arrow-left"></i>
+            </span>
+            <span>Tilbage</span>
+        </button>
+        <div class="has-text-centered mb-4">
+            <button class="button is-outlined mx-2 mb-2 btn" onclick="filterSelection('all')">Alle</button>
+            <button class="button is-outlined filter-btn btn" onclick="filterSelection('school')">Skole Projekter</button>
+            <button class="button is-outlined filter-btn btn" onclick="filterSelection('personal')">Personlige Projekter</button>
+        </div>
+        <div id="project-list" class="columns is-multiline is-centered is">
+            <!-- Project 1 -->
+            <div class="column is-one-third project-container school">
+                <div class="card shadow">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/e-commerce.png" alt="E-Commerce">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-4 has-text-weight-bold" id="cevat-text">E-Commerce</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">Wordpress / UX-design</p>
+                        <p class="content ">
+                            We designed a unique T-shirt and launched an e-commerce store, using Instagram to promote the product and engage with customers.
+                        </p>
+                        <div class="is-flex">
+                            
+                            <span class="icon ml-auto">
+                                <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-ecommerce">
+                                    <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                    
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="column is-one-third project-container school">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/app.png" alt="Iværksætteridé">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Semester Project</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">HTML - CSS - JS / UX-design</p>
+                        <p class="content">
+                            For my final multimedia design project, I developed an app idea for craftsmen, conducting research to identify its potential. I managed the entire process from ideation and design to coding and marketing, incorporating Lean Startup and Design Thinking models.
+                        </p>
+                        <div class="is-flex mt-3">
+                            <div class="is-flex">
+                                <span class="icon">
+                                    <a href="https://github.com/Shahad1991/HandyPlanner" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </span>
+                                <span class="icon ml-3">
+                                    <i class="fas fa-globe"></i>
+                                </span>
+                            </div>
+                            <span class="icon ml-auto">
+                                <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-semester">
+                                    <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="column is-one-third project-container school">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/kogehandel.png" alt="UX">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Køge Handel</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">HTML - CSS - JS / UX-design</p>
+                        <p class="content">
+                            We worked with Køge Handel to increase customer traffic by addressing issues like unclear parking rules and navigation. The solution was a QR code providing easy access to parking and store information.
+                        </p>
+                        <div class="is-flex mt-3">
+                            <div class="is-flex">
+                                <span class="icon">
+                                    <a href="https://github.com/Shahad1991/Koege-handel" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </span>
+                                <span class="icon ml-3">
+                                    <a href="https://shahad1991.github.io/Koege-handel/" target="_blank">
+                                        <i class="fas fa-globe"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <span class="icon ml-auto">
+                                <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-koege">
+                                    <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="column is-one-third project-container school">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/2sem.png" alt="Opbygning af Hjemmeside">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">2 Semester Exam</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">HTML - CSS - JS / UX-design</p>
+                        <p class="content">
+                            Her har vi samarbejdet med, <a href="http://www.hmi-tomrermester.dk/"> hmi-tomremester </a> Sammen udviklede vi en imponerende hjemmeside og en målrettet social medie strategi til en start-up tømrervirksomhed. Endvidere kunne vi stolt præsentere en velformuleret hjemmeside til vores kunde.
+                        </p>
+                        <div class="is-flex mt-3">
+                            <div class="is-flex">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span class="icon ml-3">
+                                    <i class="fas fa-globe"></i>
+                                </span>
+                            </div>
+                            <span class="icon ml-auto">
+                                <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-opbygning">
+                                    <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="column is-one-third project-container school">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/golf.png" alt="Optimering af Hjemmeside">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">GolfAcross</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">HTML - CSS - JS / UX-design</p>
+                        <p class="content">
+                            Vi har samarbejdet med en kunde, som driver hjemmesiden <a href="https://www.golfacross.com/"> GolfAcross</a>, hvor målgruppen er golfspillere. Vores opgave var at optimere hjemmesiden ved at gennemføre omfattende tests af både appen og hjemmesiden. Målet var at identificere problemer og derefter arbejde målrettet på at løse dem.
+                        </p>
+                        <div class="is-flex mt-3">
+                            <div class="is-flex">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span class="icon ml-3">
+                                    <i class="fas fa-globe"></i>
+                                </span>
+                            </div>
+                            <span class="icon ml-auto">
+                                <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-golf">
+                                    <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="column is-one-third project-container school">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/bookingsystem.png" alt="Opbygning af Bookingsystem">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Opbygning af Bookingsystem</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">HTML - CSS - JS - Firbase / UX-design</p>
+                        <p class="content">
+                            På tredje semester af multimediedesign har jeg samarbejdet med en kollega om at designe og udvikle et nyt bookingsystem til en psykiatrisk hjemmeside. Projektet involverede tæt samarbejde med kunden og omfattede hele processen fra UX-research og design til kodning af prototypen, hvor fokus var at forbinde systemet til en database ved hjælp af Firebase.
+                        </p>
+                        <div class="is-flex mt-3">
+                            <div class="is-flex">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span class="icon ml-3">
+                                    <i class="fas fa-globe"></i>
+                                </span>
+                            </div>
+                            <span class="icon ml-auto">
+                                <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-bookingsystem">
+                                    <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="column is-one-third project-container personal">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/logodesign.png" alt="Logo Design">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Logo Design</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">Grafisk design</p>
+                        <p class="content">
+                            Jeg har designet et logo til en tømrerfirma, der er både enkelt og nemt at huske. Logoet blev brugt på arbejdstøj, arbejdsbil og visitkort.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="column is-one-third project-container personal">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/bilreklame.png" alt="Design af Bilreklame">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Design af Bilreklame</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">Grafisk design</p>
+                        <p class="content">
+                            Som en del af mit designlærlingarbejde har jeg designet en bilreklame for en kunde. Fokus var på at vælge farver og skrifttyper, som allerede er brugt på kundens hjemmeside, for at sikre en sammenhængende visuel identitet. Reklamen præsenterer informationen klart og tydeligt, og sigter mod at øge synligheden og tiltrække flere kunder.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+              <!-- Project 9 -->
+            <div class="column is-one-third project-container personal">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/some.png" alt="Content Creation">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Content Creation</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">Grafisk design / UX-design</p>
+                        <p class="content">
+                            I min fritid arbejder jeg med content creation HMI Tømrermester på deres erhvervs-Instagram-konto. <br>Mine opgaver omfatter:
+                        </p>
+                        <ul class="list-disc list-inside mt-2">
+                            <li>Design af Instagram highlights</li>
+                            <li>Desk research og idegenerering</li>
+                            <li>Fotografering af projekter</li>
+                            <li>Videoproduktion og -redigering</li>
+                        </ul>
+                        <div class="is-flex mt-3">
+                            <span class="icon">
+                                <a href="https://www.instagram.com/hmitomrermester/ target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </span>
+                            
+                            
+                            <span class="icon ml-auto">
+                                <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-contentcreation">
+                                    <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 10 -->
+            <div class="column is-one-third project-container personal">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/bilreklame.png" alt="Design af Bilreklame">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Design af Bilreklame</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">Grafisk design</p>
+                        <p class="content">
+                            Som en del af mit designlærlingarbejde har jeg designet en bilreklame for en kunde. Fokus var på at vælge farver og skrifttyper, som allerede er brugt på kundens hjemmeside, for at sikre en sammenhængende visuel identitet. Reklamen præsenterer informationen klart og tydeligt, og sigter mod at øge synligheden og tiltrække flere kunder.
+                        </p>
+                        <img src="./images/hmi-bil.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Project 11 -->
+            <div class="column is-one-third project-container personal">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/visitkort.png" alt="Design af Visitkort">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Design af Visitkort</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">Grafisk design</p>
+                        <p class="content ">
+                            Jeg har designet et visitkort, der hjælper kunden med at nå ud til sin målgruppe. Fokus var på at skabe et professionelt og mindeværdigt design, der effektivt kommunikerer kundens budskab og brandidentitet.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Modal for E-Commerce -->
+<div id="modal-ecommerce" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-dark">
+        <header class="modal-card-head">
+            <p class="modal-card-title">E-Commerce Project Details</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="has-text-weight-bold">My role involved:</p>
+            <ul class="content has-bullets">
+                <li>Ideation and concept development</li>
+                <li>Storytelling and content creation</li>
+                <li>Conducting interviews and testing</li>
+                <li>Storytelling and content creation</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<!-- Modal for Semester Project -->
+<div id="modal-semester" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-dark">
+        <header class="modal-card-head">
+            <p class="modal-card-title has-text-dark">Semester Project Details</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="has-text-weight-bold">My role involved:</p>
+            <ul class="content has-bullets">
+                <li>Conducting interviews and desk research</li>
+                <li>Development of personas and user journeys</li>
+                <li>Ideation / Testing of the solution</li>
+                <li>Coding the prototype</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<!-- Modal for Køge Handel -->
+<div id="modal-koege" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-dark">
+        <header class="modal-card-head">
+            <p class="modal-card-title has-text-dark">Køge Handel Project Details</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="has-text-weight-bold">My role involved:</p>
+            <ul class="content has-bullets">
+                <li>Conducting interviews and desk research</li>
+                <li>Development of personas and user journeys</li>
+                <li>Ideation / Testing of the solution</li>
+                <li>Coding the prototype</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<!-- Modal for Opbygning af Hjemmeside -->
+<div id="modal-opbygning" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-dark">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Opbygning af Hjemmeside Project Details</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="has-text-weight-bold">My role involved:</p>
+            <ul class="content has-bullets">
+                <li>Undersøgelse af målgruppen/interviews</li>
+                <li>Udvikling af markedsføringsstrategi</li>
+                <li>Finde farver og skrifttype/ Design af prototyper</li>
+                <li>Kodning af dele af projektet</li>
+            </ul>
+        </section>
+    </div>
+</div>
+<!-- Modal for Optimering af Hjemmeside -->
+<div id="modal-golf" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-dark">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Optimering af Hjemmeside Project Details</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="has-text-weight-bold">My role involved:</p>
+            <ul class="content has-bullets">
+                <li>Gennemførelse af interviews og tests</li>
+                <li>Udarbejdelse af personaer og brugerrejser</li>
+                <li>Kodning af dele af prototypen</li>
+                <li>Idegenerering</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<!-- Modal for Opbygning af Bookingsystem -->
+<div id="modal-bookingsystem" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-dark">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Opbygning af Bookingsystem Project Details</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="has-text-weight-bold">My role involved:</p>
+            <ul class="content has-bullets">
+                <li>logodesign</li>
+                <li>Udarbejdelse af personaer og brugerrejser</li>
+                <li>Kodning af dele af prototypen</li>
+                <li>Idegenerering og forbindelse med database</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+
+<!-- Modal for Content Creation -->
+<div id="modal-contentcreation" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-dark">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Content Creation Project Details</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="has-text-weight-bold">My role involved:</p>
+            <ul class="content has-bullets">
+                <li>Design af Instagram highlights</li>
+                <li>Desk research og idegenerering</li>
+                <li>Fotografering af projekter</li>
+                <li>Videoproduktion og -redigering</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript for toggling modals -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".js-modal-trigger").forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            
+            let targetId = this.getAttribute("data-target");
+            let targetElement = document.getElementById(targetId);
+            
+            // Toggle modal visibility
+            targetElement.classList.add("is-active");
+        });
+    });
+
+    document.querySelectorAll(".modal .delete, .modal-background").forEach(button => {
+        button.addEventListener("click", function () {
+            let modal = this.closest(".modal");
+            modal.classList.remove("is-active");
+        });
+    });
+});
+</script>
+
+</body>
+</html>

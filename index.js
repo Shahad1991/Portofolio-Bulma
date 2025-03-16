@@ -1,5 +1,5 @@
 const h2Element = document.getElementById('changingH2');
-const h2Texts = ['kreativ', 'samarbeidsvillig', 'nysgerrig', 'struktureret', 'ambitiøs', 'detaljeorienteret', 'imødekommende'];
+const h2Texts = ['Creative', 'Team player', 'Curious', 'Organized', 'Ambitious', 'Detail-oriented'];
 let currentIndex = 0;
 let letterIndex = 0;
 
@@ -26,11 +26,7 @@ function eraseText() {
 
 typeWriter(); // Start the typing animation
 
-document.getElementById("toggle-text").addEventListener("click", function(event) {
-  event.preventDefault();
-  const extraContent = document.getElementById("extra-content");
-  extraContent.style.display = (extraContent.style.display === "none" || extraContent.style.display === "") ? "block" : "none";
-});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.getElementById('burger');
