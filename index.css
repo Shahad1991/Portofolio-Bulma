@@ -103,7 +103,7 @@ span {
 .card {
   background-color: var(--cards-color);
   color: var(--text-color);
-
+  height: 100%;
   border: 1px solid transparent; /* Ændret til transparent for at bruge border-image */
 }
 
