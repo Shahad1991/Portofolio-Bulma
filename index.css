@@ -10,7 +10,7 @@
   --gold-shadow-color: rgba(238, 213, 162, 0.5); /* Adjust the alpha value for transparency */
 }
 
-body {
+body, html {
   background-color: var(--primary-color);
   color: var(--text-color);
   font-family: 'Jost', sans-serif;
