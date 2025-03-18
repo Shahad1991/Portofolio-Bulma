@@ -9,6 +9,7 @@
   --gold-color: linear-gradient(90deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
   --gold-shadow-color: rgba(238, 213, 162, 0.5); /* Adjust the alpha value for transparency */
 }
+
 body {
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -123,5 +124,23 @@ span {
   font-family: 'Caveat', cursive;
   font-weight: lighter;
 }
+.arrow-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateX(-50%) translateY(0);
+  }
+  40% {
+      transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+      transform: translateX(-50%) translateY(-5px);
+  }
+}
 
