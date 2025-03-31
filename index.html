@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
     <title>Portfolio Bulma</title>
@@ -76,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="has-text-centered arrow-container">
+        <div class="has-text-centered arrow-container is-hidden-mobile">
             <a href="#next-section" class="icon is-large">
                 <i class="fas fa-arrow-down fa-2x"></i>
             </a>
@@ -139,6 +140,13 @@
                     <button class="custom-button" disabled>Github</button>
                 </div>
                 <div class="column is-narrow">
+                    <button class="custom-button" disabled>Vercel</button>
+                </div>
+                <div class="column is-narrow">
+                    <button class="custom-button" disabled>Postman</button>
+                </div>
+                
+                <div class="column is-narrow">
                     <button class="custom-button" disabled>HTML</button>
                 </div>
                 <div class="column is-narrow">
@@ -146,6 +154,9 @@
                 </div>
                 <div class="column is-narrow">
                     <button class="custom-button" disabled>JavaScript</button>
+                </div>
+                <div class="column is-narrow">
+                    <button class="custom-button" disabled>TypeScript</button>
                 </div>
                 <div class="column is-narrow">
                     <button class="custom-button" disabled>React</button>
@@ -166,10 +177,10 @@
                     <button class="custom-button" disabled> Tailwind</button>
                 </div>
                 <div class="column is-narrow">
-                    <button class="custom-button" disabled>Wordpress</button>
+                    <button class="custom-button" disabled>WordPress</button>
                 </div>
                 <div class="column is-narrow">
-                    <button class="custom-button" disabled>Sass</button>
+                    <button class="custom-button" disabled>SASS</button>
                 </div>
     
                 <div class="column is-narrow">
@@ -186,6 +197,9 @@
                 </div>
                 <div class="column is-narrow">
                     <button class="custom-button" disabled>MySQL</button>
+                </div>
+                <div class="column is-narrow">
+                    <button class="custom-button" disabled>MongoDB</button>
                 </div>
                 <div class="column is-narrow">
                     <button class="custom-button" disabled>Docker</button>
@@ -311,7 +325,7 @@
                             </figure>
                         </div>
                         <div class="card-content p-4">
-                            <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Lemonad Stand</h5>
+                            <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Lemonad Stand- React.js</h5>
                             <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">React - Vite / Tailwind</p>
                             <p class="content">
                                 This project is a React-based webshop where users can add items to a cart, remove them, and checkout to see the final invoice
@@ -323,10 +337,52 @@
                                             <i class="fab fa-github"></i>
                                         </a>
                                     </span>
+                                    <span class="icon ml-3">
+                                        <a href="https://lemonade-stand-37dlxp0b6-shahads-projects-46a37fea.vercel.app/" target="_blank">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                    </span>
             
                                 </div>
                                 <span class="icon ml-auto">
                                     <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-lemonad-stand">
+                                        <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project lemonade next -->
+                <div class="column is-one-third project-container school">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by2">
+                                <img src="./images/lemonadstand-net.png" alt="lemonadstand">
+                            </figure>
+                        </div>
+                        <div class="card-content p-4">
+                            <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Lemonad Stand- Next.js</h5>
+                            <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">Next.js</p>
+                            <p class="content">
+                                This project is a Next.js-based webshop where users can add items to a cart, remove them, and checkout to see the final invoice
+                            </p>
+                            <div class=" card-foot is-flex mt-3">
+                                <div class="is-flex">
+                                    <span class="icon">
+                                        <a href="https://github.com/Shahad1991/lemonade-stand-next" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </span>
+                                    <span class="icon ml-3">
+                                        <a href="https://lemonade-stand-next-deploy.vercel.app/" target="_blank">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                    </span>
+            
+                                </div>
+                                <span class="icon ml-auto">
+                                    <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-lemonad-stand-next">
                                         <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
                                     </a>
                                 </span>
@@ -486,6 +542,39 @@
 
                 </div>
             </div>
+
+            <div class="column is-one-third project-container school">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2">
+                            <img src="./images/lobesko.png" alt="Opbygning af Bookingsystem">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4">
+                        <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Løbesko Guide</h5>
+                        <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">React.js / UX-design</p>
+                        <p class="content">
+                            I created a simple website using React.js to help users find the right running shoes based on their preferences and needs.
+                        </p>
+                        <div class="is-flex mt-3">
+                            <div class="is-flex">
+                                <span class="icon">
+                                    <a href="https://github.com/Shahad1991/Lobesko-website" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </span>
+            
+                            </div>
+                            <span class="icon ml-auto">
+                                <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-lobesko">
+                                    <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <!-- Project 13 -->
             <div class="column is-one-third project-container personal">
                 <div class="card">
@@ -599,33 +688,35 @@
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-2by2">
-                                <img src="./images/animation.png" alt="Content Creation">
+                                <img src="./images/next-mongodb.png" alt="Webshop">
                             </figure>
                         </div>
                         <div class="card-content p-4">
-                            <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Animation</h5>
-                            <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">HTML - CSS - JavaScript </p>
+                            <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Webshop</h5>
+                            <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">Next.js - Mongo DB</p>
                             <p class="content">
-                                I created an animation using HTML, CSS, and JavaScript to showcase my skills in frontend development.
+                                This project is a simple webshop built using Next.js and MongoDB, inspired by a LinkedIn course. It allows users to add items to a cart and remove them, with a summary of the selected items displayed.
                             </p>
                             
                             <div class="is-flex mt-3">
                                 <span class="icon">
-                                    <a href="https://github.com/Shahad1991/Animation/ " target=blank">
+                                    <a href="https://github.com/Shahad1991/e-commerce-app" target="_blank">
                                         <i class="fab fa-github"></i>
                                     </a>
                                 </span>
-                               
-                                <span class="icon">
-                                    <a href=" https://shahad1991.github.io/Animation/ "target=_blank">
-                                        <i class="fas fa-globe"></i>
+                                
+                                
+                                <span class="icon ml-auto">
+                                    <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-webshop">
+                                        <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
                                     </a>
                                 </span>
-                                
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     
@@ -690,6 +781,45 @@
                     <li>Development of personas and user journeys</li>
                     <li>Ideation / Testing of the solution</li>
                     <li>Coding the prototype</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- Modal for Løbesko -->
+    <div id="modal-lobesko" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card has-text-dark">
+            <header class="modal-card-head">
+                <p class="modal-card-title has-text-dark">Løbesko Guide Project Details</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <p class="has-text-weight-bold">My role involved:</p>
+                <ul class="content has-bullets">
+                    <li>Development of marketing strategy</li>
+                    <li>Ideation / Testing of the solution</li>
+                    <li>Coding the prototype</li>
+                    <li>Implementing login functionality for user authentication</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Modal for webshop -->
+    <div id="modal-webshop" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card has-text-dark">
+            <header class="modal-card-head">
+                <p class="modal-card-title has-text-dark">Webshop Project Details</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <p class="has-text-weight-bold">Key Features:</p>
+                <ul class="content has-bullets">
+                    <li>Built with Next.js for server-side rendering and improved performance</li>
+                    <li>Integrated MongoDB for database management</li>
+                    <li>Dynamic cart functionality for adding and removing items</li>
+                    <li>Responsive design for seamless user experience across devices</li>
                 </ul>
             </section>
         </div>
@@ -788,6 +918,26 @@
                 <li>State management using Redux</li>
                 <li>Efficient routing with React Router</li>
                 <li>Reusable and modular component structure</li>
+            </ul>
+        </section>
+    </div>
+</div>
+<!-- Modal for Lemonad Stand Next.js -->
+<div id="modal-lemonad-stand-next" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-dark">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Lemonade-Stand-Next.js Project Details</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="has-text-weight-bold">Key Features:</p>
+            <ul class="content has-bullets">
+                <li>Built with Next.js for server-side rendering and improved performance</li>
+                <li>Dynamic routing for seamless navigation</li>
+                <li>Integrated Tailwind CSS for responsive and modern UI design</li>
+                <li>Reusable and modular component structure</li>
+                <li>Deployed on Vercel for fast and reliable hosting</li>
             </ul>
         </section>
     </div>
