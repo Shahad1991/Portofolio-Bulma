@@ -96,18 +96,49 @@ span {
   background-image: var(--gold-color); /* Guld baggrund ved hover */
   color: var(--primary-color); /* Mørk farve tekst ved hover */
 }
+.btn-f {
+  background-color: var(--gold-color);
+  color: var(--text-color); /* Text color for normal state */
+  border: 1px solid transparent; /* Transparent border for gradient */
+  border-image: var(--gold-color); /* Use gradient for border */
+  border-image-slice: 1; /* Ensure the full gradient is used */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover/active effects */
+}
 
+.btn-f:hover, .btn-f:active {
+  background-image: var(--gold-color); /* Gold gradient background */
+  color: var(--text-color); /* Dark text color on hover/active */
+  box-shadow: 0 4px 12px var(--gold-shadow-color); /* Add shadow effect */
+  transform: scale(1.05); /* Slightly enlarge the button on hover/active */
+}
 .shadow {
   box-shadow: 0 4px 12px var(--gold-shadow-color);
 }
-
+.card-s{
+  background-color: var(--cards-color);
+  color: var(--text-color);
+  
+}
 .card {
   background-color: var(--cards-color);
   color: var(--text-color);
   height: 100%;
-  border: 1px solid transparent; /* Ændret til transparent for at bruge border-image */
+  border: 1px solid transparent;
+  display: flex; /* Makes the card a flex container */
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: space-between; /* Ændret til transparent for at bruge border-image */
+}
+.card-content {
+  flex-grow: 1; /* Ensures the content takes up available space */
+  display: flex; /* Makes the content a flex container */
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: space-between; /* Pushes the last child to the bottom */
 }
 
+.card-content .is-flex {
+  margin-top: auto; /* Pushes the .is-flex div to the bottom */
+}
 .icon, a {
   background: var(--gold-color);
   background-clip: text;
@@ -144,3 +175,7 @@ span {
   }
 }
 
+.skils {
+  display: flex;
+ 
+}

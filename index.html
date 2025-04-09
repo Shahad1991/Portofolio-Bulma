@@ -92,7 +92,7 @@
                 
                 <!-- UX/UI Design -->
                 <div class="column is-one-third " >
-                    <div class="box has-text-centered card">
+                    <div class="box has-text-centered card-s">
                         <span class="icon is-large">
                             <i class="fas fa-paint-brush fa-3x  competenc"></i>
                         </span>
@@ -102,8 +102,8 @@
                 </div>
     
                 <!-- Frontend Udvikling -->
-                <div class="column is-one-third">
-                    <div class="box has-text-centered card">
+                <div class="column is-one-third ">
+                    <div class="box has-text-centered card-s">
                         <span class="icon is-large">
                             <i class="fas fa-code fa-3x  competenc"></i>
                         </span>
@@ -114,7 +114,7 @@
     
                 <!-- Backend Udvikling -->
                 <div class="column is-one-third">
-                    <div class="box has-text-centered card">
+                    <div class="box has-text-centered card-s">
                         <span class="icon is-large">
                             <i class="fas fa-server fa-3x  competenc"></i>
                         </span>
@@ -132,7 +132,7 @@
                 my expertise spans across these frameworks, programming languages, and tools, among others.
             </h4>
             
-            <div class="columns is-multiline is-centered is-vcentered  p-5 shadow"  id="gradient-border">
+            <div class="columns is-multiline is-centered is-vcentered  p-5 shadow skils"  id="gradient-border">
                 <div class="column is-narrow">
                     <button class="custom-button" disabled>VSCode</button>
                 </div>
@@ -180,6 +180,12 @@
                     <button class="custom-button" disabled>WordPress</button>
                 </div>
                 <div class="column is-narrow">
+                    <button class="custom-button" disabled>Umbraco</button>
+                </div>
+                <div class="column is-narrow">
+                    <button class="custom-button" disabled>Big Data</button>
+                </div>
+                <div class="column is-narrow">
                     <button class="custom-button" disabled>SASS</button>
                 </div>
     
@@ -196,7 +202,10 @@
                     <button class="custom-button" disabled>Express.js</button>
                 </div>
                 <div class="column is-narrow">
-                    <button class="custom-button" disabled>MySQL</button>
+                    <button class="custom-button" disabled>SQL</button>
+                </div>
+                <div class="column is-narrow">
+                    <button class="custom-button" disabled>NoSQL</button>
                 </div>
                 <div class="column is-narrow">
                     <button class="custom-button" disabled>MongoDB</button>
@@ -239,9 +248,9 @@
             </div>
 
             <div class="has-text-centered mb-4">
-                <button class="button is-outlined mx-2 mb-2 btn" onclick="filterSelection('all')">All</button>
-                <button class="button is-outlined filter-btn btn" onclick="filterSelection('school')">School Projects</button>
-                <button class="button is-outlined filter-btn btn" onclick="filterSelection('personal')">Personal Projects</button>
+                <button class="button is-outlined mx-2 mb-2 btn-f" onclick="filterSelection('all')">All</button>
+                <button class="button is-outlined filter-btn btn-f" onclick="filterSelection('school')">School Projects</button>
+                <button class="button is-outlined filter-btn btn-f" onclick="filterSelection('personal')">Personal Projects</button>
             </div>
             <div id="project-list" class="columns is-multiline is-centered is">
                 <!-- Project 1 -->
@@ -270,6 +279,11 @@
                                     </a>
                                 </span>
                                 
+                                <span class="icon">
+                                    <a href="https://youtube.com/shorts/444vrkEK8kE?si=Q4aT7-Eq64x9JC3m" target="_blank">
+                                        <i class="fas fa-video"></i>  
+                                    </a>
+                                </span>
                                 <span class="icon ml-auto">
                                     <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-econvaner">
                                         <i class="fas fa-external-link-alt ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
@@ -963,9 +977,10 @@
         
 
     </div>
+    
 </div>
 
-        <div class="has-text-centered">
+        <div class=" has-text-centered p-5">
             <a href="test.html" class="btn show-more-button my4">Show More Projects</a>
         </div>
        
@@ -987,11 +1002,12 @@
                         a brief overview of my background, passions, and vision
                     </h4>
                     <p class="has-text-light">
-                        I am a web developer with a strong passion for creating innovative and user-friendly digital solutions. My journey into web development began with a fascination for technology and design, and I have since honed my skills in various programming languages, frameworks, and tools. I am dedicated to building responsive, accessible, and efficient websites that offer seamless user experiences.
-                        <br>
-                        I thrive in collaborative environments and enjoy working alongside other professionals to bring creative ideas to life. I believe that continuous learning is key to staying ahead in the tech industry, and I am always exploring new technologies and techniques to enhance my skills. <br>
-                        I am a detail-oriented individual who values structure and organization in my work. This helps me deliver high-quality results and meet deadlines effectively. Whether working independently or as part of a team, I strive to produce clean, well-structured code that meets both user needs and business goals. <br>
-                        Outside of my professional work, I have a strong interest in photography, which allows me to observe the world through a creative lens and further develop my visual design skills. This hobby has influenced my approach to web development, enabling me to create visually appealing and meaningful digital experiences.
+                        I am a curious and motivated developer with a strong passion for technology and problem-solving. 
+                        What drew me into software development was the inspiring blend of technology and creativity —I saw it as a space where ideas could become reality, and that’s what pushed me to study it further.<br><br>
+
+                        I enjoy learning new technologies and thrive on challenges—whether in development, data analysis, or working with Big Data. Through my education, I’ve gained experience with a wide range of tools and technologies, <br><br>including programming languages, frameworks and databases.
+
+                        I thrive in collaborative environments where ideas can be shared and turned into practical solutions. I am detail-oriented and structured in my work, always aiming to create reliable, user-friendly, and scalable solutions.
                     </p>
                     <a href="./images/CV-Shahad.pdf" target="_blank" class="btn button mt-4">
                         CV
@@ -1032,8 +1048,8 @@
             </div>
     
             <div class="buttons is-centered mt-4 my-2">
-                <button class="btn prev my-2">❮</button>
-                <button class=" btn next ">❯</button>
+                <button class="btn-f prev my-2 p-3">❮</button>
+                <button class=" btn-f next p-3 my-2">❯</button>
             </div>
         </div>
     </section>
@@ -1095,21 +1111,7 @@
     <footer class=" mt-5">
     
         <div class="container has-text-centered justify-content-space-between">
-            <!-- Footer Icons -->
-            <div class="icons is-flex is-justify-content-center is-align-items-center mt-4">
-                <a href="https://github.com/Shahad1991" class="mx-3">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="mailto:shahad1nazar@gmail.com" class="mx-3">
-                    <i class="fas fa-envelope fa-2x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/shahad-al-jawashee-41502a24b/" class="mx-3">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-            </div>
-             
-            
-    
+
             <!-- Footer Links -->
             <ul class="menu list-inline mb-4 my-2">
                 <li class="menu-item is-inline-block my-2 mx-2">
@@ -1125,6 +1127,23 @@
                     <a href="#contact" class=" has-text-decoration-none" >Contact</a>
                 </li>
             </ul>
+
+            <!-- Footer Icons -->
+            <div class="icons is-flex is-justify-content-center is-align-items-center mt-4 mb-4">
+                <a href="https://github.com/Shahad1991" class="mx-3">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="mailto:shahad1nazar@gmail.com" class="mx-3">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shahad-al-jawashee-41502a24b/" class="mx-3">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+             
+            
+    
+            
     
             <!-- Copyright Text -->
             <p class="mb-0 small-text" >&copy; 2025 Shahad. All rights reserved</p>
