@@ -94,3 +94,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial visning af alle projekter
     filterSelection('all');
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+
+    // Håndter klik på billedikoner
+    document.querySelectorAll(".icon-card.is-clickable").forEach(icon => {
+        icon.addEventListener("click", function () {
+            const imgSrc = this.getAttribute("data-img");
+            modalImage.src = imgSrc; // Sæt billedets kilde
+            modal.classList.add("is-active"); // Vis modal
+        });
+    });
+
+    // Luk modal ved klik på baggrund eller luk-knap
+    modal.querySelector(".modal-background").addEventListener("click", function () {
+        modal.classList.remove("is-active");
+    });
+
+    modal.querySelector(".modal-close").addEventListener("click", function () {
+        modal.classList.remove("is-active");
+    });
+});

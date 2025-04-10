@@ -87,11 +87,10 @@ span {
   border: 1px solid transparent; /* Ændret til transparent for at bruge border-image */
   border-image: var(--gold-color); /* Tilføj denne linje for at bruge gradienten */
   border-image-slice: 1; /* Tilføj denne linje for at sikre, at hele gradienten bruges */
-  cursor: pointer;
   padding: 12px 25px; 
   
 }
-.btn:hover, .custom-button:hover,
+.btn:hover, 
 .btn:active  {
   background-image: var(--gold-color); /* Guld baggrund ved hover */
   color: var(--primary-color); /* Mørk farve tekst ved hover */
@@ -178,4 +177,41 @@ span {
 .skils {
   display: flex;
  
+}
+
+.play-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.play-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem; /* Adjust the size of the play icon */
+  color: var(--gold-color); /* Use your gold color variable */
+ 
+}
+.icon-card {
+  font-size: 1.5rem; /* Passende størrelse for ikoner */
+  cursor: pointer; /* Indikerer, at ikonet er klikbart */
+  transition: transform 0.2s ease; /* Tilføjer en hover-effekt */
+}
+
+.icon-card:hover {
+  transform: scale(1.2); /* Forstørrer ikonet lidt ved hover */
+}
+.modal-content img {
+  max-width: 100%; /* Sørger for, at billedet ikke overstiger modalens bredde */
+  height: auto; /* Bevarer billedets oprindelige proportioner */
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* Sørger for, at billedet passer naturligt inden for containeren */
+  border-radius: 0; /* Fjern eventuelle afrundede hjørner, hvis det ikke ønskes */
 }
