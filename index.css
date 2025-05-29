@@ -215,3 +215,15 @@ span {
   object-fit: contain; /* Sørger for, at billedet passer naturligt inden for containeren */
   border-radius: 0; /* Fjern eventuelle afrundede hjørner, hvis det ikke ønskes */
 }
+.fullstack-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--gradient-middle); /* Brug en guld-lignende midterfarve */
+  color: var(--primary-color); /* Mørk tekst */
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px var(--gold-shadow-color);
+}
