@@ -216,6 +216,15 @@
                 <div class="column is-narrow">
                     <button class="custom-button" disabled>Firebase</button>
                 </div>
+                <div class="column is-narrow">
+                    <button class="custom-button" disabled>Jest</button>
+                </div>
+                <div class="column is-narrow">
+                    <button class="custom-button" disabled>Cypress</button>
+                </div>
+                <div class="column is-narrow">
+                    <button class="custom-button" disabled>Storybook</button>
+                </div>
     
                 <div class="column is-narrow">
                     <button class="custom-button" disabled>Figma</button>
@@ -253,6 +262,76 @@
                 <button class="button is-outlined filter-btn btn-f" onclick="filterSelection('personal')">Personal Projects</button>
             </div>
             <div id="project-list" class="columns is-multiline is-centered is">
+                <!-- Project CSIS internship -->
+                <div class="column is-one-third project-container school">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by2">
+                                <img src="./images/csis.png" alt="CSIS internship">
+                            </figure>
+                        </div>
+                        <div class="card-content p-4">
+                            <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Internship</h5>
+                            <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">React.js / TypeScript </p>
+                            <p class="content">
+                                During my internship at CSIS I worked with Frontend development, implemented state management with Redux, ensured testing and quality assurance using Jest and Cypress, and followed version control best practices with Git workflows.
+                            </p>
+                            <div class="is-flex mt-3">
+                                <div class="is-flex">
+                                    <span class="icon-card">
+                                        <a href="https://www.csis.com/" target="_blank">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                                <span class="icon-card ml-auto">
+                                    <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-csis">
+                                        <i class="fas fa-circle-info ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project HMI Customer Project -->
+                <div class="column is-one-third project-container personal">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by2">
+                                <img src="./images/hmi-ny.png" alt="HMI Customer Project">
+                            </figure>
+                        </div>
+                        <div class="card-content p-4">
+                            <h5 class="title is-2 has-text-weight-bold" id="cevat-text">HMI Customer Project</h5>
+                            <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">Next.js / Tailwind CSS / WordPress</p>
+                            <p class="content">
+                                Custom frontend solution for HMI Tømrermester using Next.js and JavaScript, featuring headless WordPress integration, UI components in Figma and Tailwind CSS, and improvements in SEO and performance.
+                            </p>
+                            <div class="is-flex">
+                                <span class="icon-card ">
+                                    <a href="https://github.com/Shahad1991/hmi-tomrermester" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </span>
+                                <span class="icon-card ml-3">
+                                    <a href="https://hmi-tomrermester.dk/" target="_blank">
+                                        <i class="fas fa-globe"></i>
+                                    </a>
+                                </span>
+                                
+                               
+                                <span class="icon-card ml-auto ">
+                                    <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-hmi-customer">
+                                        <i class="fas fa-circle-info ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                        
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project 1 -->
                 <div class="column is-one-third project-container school">
                     <div class="card ">
@@ -346,7 +425,7 @@
                         </div>
                         <div class="card-content p-4">
                             <h5 class="title is-2 has-text-weight-bold" id="cevat-text">Skålkassen</h5>
-                            <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">React.js / Laravel & Reacr.js / Wordpress API</p>
+                            <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">React.js / Laravel & React.js / Wordpress API</p>
                             <p class="content">
                                 A React-based webshop with two versions: one connected to a Laravel backend, and another using WordPress as a headless CMS via REST API.
                             </p>                              
@@ -538,20 +617,19 @@
                             <p class="subtitle is-6 has-text-weight-light has-text-light has-text-style">HTML - CSS - JS / UX-design</p>
                             <p class="content">
                                 We worked with HMI-Tømremester to create a website and social media strategy for their startup carpentry business.
-                            <div class="is-flex mt-3">
-                                <div class="is-flex">
-                                    <span class="icon-card">
-                                        <a href="https://github.com/Shahad1991/HMI">
+                            </p>
+                            <div class="is-flex">
+                                <span class="icon-card">
+                                    <a href="https://github.com/Shahad1991/HMI" target="_blank">
                                         <i class="fab fa-github"></i>
-                                        </a>
-                                    </span>
-                                    <span class="icon-card ml-3">
-                                        
-                                        <a href="http://www.hmi-tomrermester.dk/" target="_blank">
-                                            <i class="fas fa-globe"></i>
-                                        </a>
-                                    </span>
-                                </div>
+                                    </a>
+                                </span>
+                                <span class="icon-card ml-3">
+                                    <a href="http://www.hmi-tomrermester.dk/" target="_blank">
+                                        <i class="fas fa-globe"></i>
+                                    </a>
+                                </span>
+                                
                                 <span class="icon-card ml-auto">
                                     <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-opbygning">
                                         <i class="fas fa-circle-info ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
@@ -577,25 +655,23 @@
                         <p class="content">
                            I designed and developed my portfolio using three CSS frameworks: Bootstrap, Tailwind, and Bulma to showcase my skills in frontend development.
                         </p>
-                        <div class=" card-foot is-flex mt-3">
-                            <div class="is-flex">
-                                <span class="icon-card">
-                                    <a href="https://github.com/Shahad1991/Portofolio-Tailwind" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </span>
-                                <span class="icon-card ml-3">
-                                    <a href="https://github.com/Shahad1991/Portofolio-Bulma" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </span>
-                                <span class="icon-card ml-3">
-                                    <a href="https://github.com/Shahad1991/Portofolio-Bootstrap-Sass" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </span>
-        
-                            </div>
+                        <div class="is-flex">
+                            <span class="icon-card">
+                                <a href="https://github.com/Shahad1991/Portofolio-Tailwind" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </span>
+                            <span class="icon-card ml-3">
+                                <a href="https://github.com/Shahad1991/Portofolio-Bulma" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </span>
+                            <span class="icon-card ml-3">
+                                <a href="https://github.com/Shahad1991/Portofolio-Bootstrap-Sass" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </span>
+                            
                             <span class="icon-card ml-auto">
                                 <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-portfolio">
                                     <i class="fas fa-circle-info ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
@@ -725,15 +801,10 @@
                             <p class="content">
                                 I designed a simple logo for a carpentry business, used on workwear, vehicles, and business cards.
                             </p>
-                            <div class="is-flex mt-3">
-                                <div class="is-flex">
-                                    <span class="icon-card is-clickable"data-img="./images/logodesign.png">
-                                       <i class="fas fa-image"></i>
-                                        
-                                    </span>
-    
-                                </div>
-                                
+                            <div class="is-flex">
+                                <span class="icon-card is-clickable" data-img="./images/logodesign.png">
+                                    <i class="fas fa-image"></i>
+                                </span>
                             </div>
                             
                             
@@ -755,14 +826,10 @@
                             <p class="content">
                                 During my apprenticeship, I designed a vehicle ad for a client, aligning with their website's colors and fonts to enhance visibility and attract customers.
                             </p>
-                            <div class="is-flex mt-3">
-                                <div class="is-flex">
-                                    <span class="icon-card is-clickable"data-img="./images/bilrekale2.png">
-                                        <i class="fas fa-image"></i>
-                                    </span>
-    
-                                </div>
-                                
+                            <div class="is-flex">
+                                <span class="icon-card is-clickable" data-img="./images/bilrekale2.png">
+                                    <i class="fas fa-image"></i>
+                                </span>
                             </div>
                             
                         </div>
@@ -783,17 +850,18 @@
                                 In my free time, I work with content creation for HMI Tømrermester on their business Instagram account.
                             </p>
                             
-                            <div class="is-flex mt-3">
-                                <span class="icon-card">
+                            <div class="is-flex">
+                                <span class="icon-card ">
                                     <a href="https://www.instagram.com/hmitomrermester/ target="_blank">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </span>
                                 
                                 
-                                <span class="icon-card ml-auto">
+                                <span class="icon-card ml-auto ">
                                     <a href="#" class="has-text-decoration-none js-modal-trigger" data-target="modal-contentcreation">
                                         <i class="fas fa-circle-info ml-1" style="background: var(--gold-color); background-clip: text; -webkit-background-clip: text; color: transparent;"></i>
+                                        
                                     </a>
                                 </span>
                             </div>
@@ -835,7 +903,6 @@
                         </div>
                     </div>
                 </div>
-
 
             </div>
         </div>
@@ -1135,6 +1202,46 @@
     
 </div>
 
+<!-- Modal for CSIS Internship -->
+<div id="modal-csis" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-dark">
+        <header class="modal-card-head">
+            <p class="modal-card-title">More about CSIS Internship</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="has-text-weight-bold">Key responsibilities:</p>
+            <ul class="content has-bullets">
+                <li>Frontend development with React and TypeScript</li>
+                <li>State management and Redux integration</li>
+                <li>Testing and quality assurance with Jest and Cypress</li>
+                <li>Version control and Git workflow</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<!-- Modal for HMI Customer Project -->
+<div id="modal-hmi-customer" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-dark">
+        <header class="modal-card-head">
+            <p class="modal-card-title">More about HMI Customer Project</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="has-text-weight-bold">Project details:</p>
+            <ul class="content has-bullets">
+                <li>Frontend development with Next.js and JavaScript</li>
+                <li>Headless integration with WordPress REST API</li>
+                <li>UI design and components in Figma and Tailwind CSS</li>
+                <li>SEO optimization and performance improvement</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
         <div class=" has-text-centered p-5">
             <a href="more.html" class="btn show-more-button my4">Show More Projects</a>
         </div>
@@ -1156,13 +1263,12 @@
                     <h4 class="subtitle" id="cevat-text">
                         a brief overview of my background, passions, and vision
                     </h4>
-                    <p class="has-text-light">
-                        I am a curious and motivated developer with a strong passion for technology and problem-solving. 
-                        What drew me into software development was the inspiring blend of technology and creativity —I saw it as a space where ideas could become reality, and that’s what pushed me to study it further.<br><br>
+                    <p>
+                            I am a curious and motivated IT student, graduating in <strong class="has-text-white">January 2026</strong>, with a strong passion for <strong class="has-text-white">fullstack development</strong> and creating complete digital solutions. I was drawn to software development by the inspiring blend of <strong class="has-text-white">technology and creativity</strong>—a space where ideas can be transformed into reality, which motivated me to pursue my studies further.<br><br>
 
-                        I enjoy learning new technologies and thrive on challenges—whether in development, data analysis, or working with Big Data. Through my education, I’ve gained experience with a wide range of tools and technologies, <br><br>including programming languages, frameworks and databases.
+                            Through client projects, internships, and study projects, I have gained hands-on experience in <strong class="has-text-white">web development</strong>, <strong class="has-text-white">fullstack applications</strong>, and <strong class="has-text-white">brand solutions</strong>, focusing on user-friendly, scalable, and visually appealing results. I enjoy learning new technologies and thrive on challenges, especially when I can combine <strong class="has-text-white">creativity</strong>, <strong class="has-text-white">problem-solving</strong>, and <strong class="has-text-white">teamwork</strong> to build practical solutions.<br><br>
 
-                        I thrive in collaborative environments where ideas can be shared and turned into practical solutions. I am detail-oriented and structured in my work, always aiming to create reliable, user-friendly, and scalable solutions.
+                            I thrive in <strong class="has-text-white">collaborative environments</strong> and am <strong class="has-text-white">detail-oriented</strong> and <strong class="has-text-white">structured</strong> in my work, always aiming to deliver reliable, functional, and engaging digital products.
                     </p>
                     <a href="./images/CV-Shahad.pdf" target="_blank" class="btn button mt-4">
                         CV
