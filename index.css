@@ -215,3 +215,308 @@ span {
   object-fit: contain; /* Sørger for, at billedet passer naturligt inden for containeren */
   border-radius: 0; /* Fjern eventuelle afrundede hjørner, hvis det ikke ønskes */
 }
+
+/* Skills Container - Compact Layout */
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Main grid for two columns layout */
+.skills-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-category {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.category-title {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.skill-item {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.15);
+    border-color: rgba(255, 215, 0, 0.2);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-header i {
+    font-size: 1rem;
+    background: var(--gold-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-right: 8px;
+    min-width: 20px;
+}
+
+.skill-name {
+    flex-grow: 1;
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+
+.skill-percentage {
+    font-weight: 600;
+    background: var(--gold-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 0.75rem;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-progress {
+    height: 100%;
+    background: var(--gold-color);
+    border-radius: 6px;
+    width: 0%;
+    transition: width 1.5s ease-in-out;
+    position: relative;
+}
+
+.skill-progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        transparent 25%, 
+        rgba(255, 255, 255, 0.2) 25%, 
+        rgba(255, 255, 255, 0.2) 50%, 
+        transparent 50%, 
+        transparent 75%, 
+        rgba(255, 255, 255, 0.2) 75%);
+    background-size: 12px 12px;
+    animation: progressStripes 1s linear infinite;
+}
+
+@keyframes progressStripes {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 12px 0;
+    }
+}
+
+/* Animation for skill bars on scroll */
+.skill-item.animate .skill-progress {
+    animation: fillProgress 1.5s ease-in-out forwards;
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--target-width, 0%);
+    }
+}
+
+/* Custom Skills Section Styling */
+.skills-section .progress {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    height: 8px;
+}
+
+.skills-section .progress::-webkit-progress-bar {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.skills-section .progress::-webkit-progress-value {
+    background: var(--gold-color);
+    border-radius: 4px;
+}
+
+.skills-section .progress::-moz-progress-bar {
+    background: var(--gold-color);
+    border-radius: 4px;
+}
+
+/* Override Bulma's warning color */
+.skills-section .progress.is-warning::-webkit-progress-value {
+    background: var(--gold-color);
+}
+
+.skills-section .progress.is-warning::-moz-progress-bar {
+    background: var(--gold-color);
+}
+
+.skills-section .box {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.skills-section .box:hover {
+    border-color: rgba(238, 213, 162, 0.3) !important;
+    box-shadow: 0 4px 20px var(--gold-shadow-color);
+    transform: translateY(-2px);
+}
+
+.skills-section .icon i {
+    background: var(--gold-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.skills-section .has-text-weight-bold {
+    background: var(--gold-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.skills-section .title {
+    color: var(--text-color) !important;
+}
+
+.skills-section .has-text-weight-medium {
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .skills-main-grid {
+        gap: 1.5rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 8px;
+    }
+    
+    .skills-main-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .skill-category {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    
+    .skill-item {
+        padding: 8px;
+    }
+    
+    .category-title {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    
+    .skill-header i {
+        font-size: 0.9rem;
+        margin-right: 6px;
+        min-width: 18px;
+    }
+    
+    .skill-name {
+        font-size: 0.75rem;
+    }
+    
+    .skill-percentage {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-category {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .skill-item {
+        padding: 6px;
+    }
+    
+    .skill-header {
+        margin-bottom: 6px;
+    }
+    
+    .skill-bar {
+        height: 3px;
+    }
+    
+    .category-title {
+        font-size: 0.85rem;
+    }
+    
+    .skill-name {
+        font-size: 0.7rem;
+    }
+    
+    .skill-percentage {
+        font-size: 0.65rem;
+    }
+}

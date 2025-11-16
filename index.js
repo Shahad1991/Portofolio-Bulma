@@ -117,3 +117,36 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.classList.remove("is-active");
     });
 });
+
+// Skills Progress Bar Animation
+document.addEventListener('DOMContentLoaded', function() {
+    const skillItems = document.querySelectorAll('.skill-item');
+    
+    // Set up intersection observer for skill animations
+    const skillObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const skillProgress = entry.target.querySelector('.skill-progress');
+                const percentage = skillProgress.getAttribute('data-percentage');
+                
+                // Animate the progress bar
+                setTimeout(() => {
+                    skillProgress.style.setProperty('--target-width', percentage + '%');
+                    skillProgress.style.width = percentage + '%';
+                    entry.target.classList.add('animate');
+                }, 200);
+                
+                // Stop observing once animated
+                skillObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.3,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    // Start observing all skill items
+    skillItems.forEach(item => {
+        skillObserver.observe(item);
+    });
+});
