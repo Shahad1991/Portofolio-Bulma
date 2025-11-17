@@ -687,9 +687,9 @@
             </div>
 
             <div class="has-text-centered mb-4">
-                <button class="button is-outlined mx-2 mb-2 btn-f" onclick="filterSelection('all')">All</button>
-                <button class="button is-outlined filter-btn btn-f" onclick="filterSelection('school')">School Projects</button>
-                <button class="button is-outlined filter-btn btn-f" onclick="filterSelection('personal')">Personal Projects</button>
+                <button class="button is-outlined mx-2 mb-2 btn-f" data-filter="all">All</button>
+                <button class="button is-outlined btn-f" data-filter="school">School Projects</button>
+                <button class="button is-outlined btn-f" data-filter="personal">Personal Projects</button>
             </div>
             <div id="project-list" class="columns is-multiline is-centered is">
                 <!-- Project CSIS internship -->
@@ -771,7 +771,7 @@
                             
                             </figure>
                             <div class="play-icon">
-                                <a href="https://youtube.com/shorts/444vrkEK8kE?si=Q4aT7-Eq64x9JC3m" target="_blank">
+                                <a href="#" class="js-modal-trigger" data-target="modal-econvaner-video">
                                    <i class="fas fa-play-circle"></i>
                                 </a>
                             </div>
@@ -1339,7 +1339,27 @@
     
     </section>
     
-    <!-- Modal for EcoVaner -->
+    <!-- Modal for EcoVaner Video -->
+    <div id="modal-econvaner-video" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card has-text-dark">
+            <header class="modal-card-head">
+                <p class="modal-card-title">EcoVaner Project Demo</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/444vrkEK8kE" 
+                            title="EcoVaner Project Demo" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- Modal for EcoVaner Info -->
     <div id="modal-econvaner" class="modal">
         <div class="modal-background"></div>
         <div class="modal-card has-text-dark">

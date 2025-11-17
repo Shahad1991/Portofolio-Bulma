@@ -66,18 +66,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('.filter-btn');
+    const filterButtons = document.querySelectorAll('.btn-f');
     const projects = document.querySelectorAll('.project-container');
   
     filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const filter = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+      button.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default behavior
+        
+        const filter = button.getAttribute('data-filter');
         filterSelection(filter);
   
-        // Fjern 'is-active' klassen fra alle knapper
-        filterButtons.forEach(btn => btn.classList.remove('is-active'));
-        // Tilføj 'is-active' klassen til den valgte knap
+        // Fjern 'is-active' og 'active' klassen fra alle knapper
+        filterButtons.forEach(btn => {
+          btn.classList.remove('is-active');
+          btn.classList.remove('active');
+        });
+        // Tilføj 'is-active' og 'active' klassen til den valgte knap
         button.classList.add('is-active');
+        button.classList.add('active');
       });
     });
   
@@ -93,6 +99,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Initial visning af alle projekter
     filterSelection('all');
+    // Set initial active state for "All" button
+    const allButton = document.querySelector('button[data-filter="all"]');
+    if (allButton) {
+      allButton.classList.add('is-active');
+      allButton.classList.add('active');
+    }
   });
 
   document.addEventListener("DOMContentLoaded", function () {
