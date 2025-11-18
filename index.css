@@ -496,6 +496,20 @@ span {
     .skill-percentage {
         font-size: 0.7rem;
     }
+    
+    /* Mobile-friendly spacing for Tools & Technologies section */
+    .level-item {
+        margin-right: 0.5rem !important;
+    }
+    
+    .level-item .icon {
+        margin-right: 0.25rem !important;
+    }
+    
+    /* Reduce spacing between tool items on mobile */
+    .columns.is-multiline .column {
+        padding: 0.25rem;
+    }
 }
 
 @media (max-width: 480px) {
