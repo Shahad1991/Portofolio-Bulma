@@ -566,6 +566,33 @@ span {
     margin: 0 auto;
 }
 
+/* Progress bar with text inside */
+.progress-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Desktop: Hide the progress text inside the bar */
+.progress-container .progress-text {
+    display: none;
+}
+
+/* Mobile: Show the progress text inside the bar */
+@media screen and (max-width: 768px) {
+    .progress-container .progress-text {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+        color: var(--text-color);
+        font-weight: bold;
+        font-size: 0.875rem;
+        z-index: 1;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .modal-card {
         margin: 1rem;
